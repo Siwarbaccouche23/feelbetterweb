@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}FeelBetter{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            <!-- google fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800%7CPoppins:300i,300,400,700,400i,500%7CDancing+Script:700%7CDancing+Script:700" rel="stylesheet">
+            <!-- animate -->
+            <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}" />
+            <!-- owl Carousel assets -->
+            <link href="{{ asset('assets/css/owl.carousel.css') }}" rel="stylesheet">
+            <link href="{{ asset('assets/css/owl.theme.css') }}" rel="stylesheet">
+            <!-- bootstrap -->
+            <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+            <!-- hover anmation -->
+            <link rel="stylesheet" href="{{ asset('assets/css/hover-min.css') }}">
+            <!-- flag icon -->
+            <link rel="stylesheet" href="{{ asset('assets/css/flag-icon.min.css') }}">
+            <!-- main style -->
+            <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+            <!-- colors -->
+            <link rel="stylesheet" href="{{ asset('assets/css/colors/main.css') }}">
+            <!-- elegant icon -->
+            <link rel="stylesheet" href="{{ asset('assets/css/elegant_icon.css') }}">
+
+
+        {% endblock %}
+
+        {% block javascripts %}
+            <!-- jquery library  -->
+            <script  src="{{ asset('assets/js/jquery-3.2.1.min.js') }}"></script>
+            <!-- fontawesome  -->
+            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+            <script  src="{{ asset('assets/js/sticky-sidebar.js') }}"></script>
+            <script  src="{{ asset('assets/js/YouTubePopUp.jquery.js') }}"></script>
+            <script  src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+            <script  src="{{ asset('assets/js/imagesloaded.min.js') }}"></script>
+            <script  src="{{ asset('assets/js/wow.min.js') }}"></script>
+            <script  src="{{ asset('assets/js/custom.js') }}"></script>
+            <script  src="{{ asset('assets/js/popper.min.js') }}"></script>
+            <script  src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+        {% endblock %}
+    </head>
+    <body>
+        {% block header %} <header class="background-white box-shadow">
+            <div class="container header-in">
+
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-12">
+                        <a id="logo" href="{{ path('app_front') }}" class="d-inline-block margin-tb-15px"><img src="assets/img/logo-1.png" alt=""></a>
+                        <a class="mobile-toggle padding-13px background-main-color" href="#"><i class="fas fa-bars"></i></a>
+                    </div>
+                    <div class="col-lg-7 col-md-12 position-inherit">
+                        <ul id="menu-main" class="nav-menu float-lg-right link-padding-tb-20px">
+                            <li class="has-dropdown"><a href="#">Home</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ path('app_front') }}">Home 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown"><a href="#">Listings</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ path('MapFront') }}">Map - Grid Layout </a></li>
+                                    <li><a href="{{ path('Map2Front') }}">Map - List Layout</a></li>
+                                    <li><a href="{{ path('DoctorFront') }}">Doctor - Layout (1)</a></li>
+                                    <li><a href="{{ path('Doctor2Front') }}">Doctor - Layout (2)</a></li>
+                                    <li><a href="{{ path('singlelistingsFront') }}">Single Listings</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown"><a href="#">Dashboard</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ path('dashbord') }}">Dashboard Home </a></li>
+                                    <li><a href="{{ path('dashbordmylistings') }}">My Listings</a></li>
+                                    <li><a href="{{ path('dashbordmyfavorites') }}">My Favorites</a></li>
+                                    <li><a href="{{ path('dashbordmyreviews') }}">Reviews</a></li>
+                                    <li><a href="{{ path('dashbordmybookings') }}">Bookings</a></li>
+                                    <li><a href="{{ path('dashbordaddlisting') }}">Add Listing</a></li>
+                                    <li><a href="{{ path('dashbordpackage') }}">Packages</a></li>
+                                    <li><a href="{{ path('dashbordprofil') }}">My Profile</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown"><a href="#">Blog</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ path('bloggridFront') }}">Blog Grid </a></li>
+                                    <li><a href="{{ path('bloglistFront') }}">Blog List</a></li>
+                                    <li><a href="{{ path('blogclassicFront') }}">Blog Classic</a></li>
+                                    <li><a href="{{ path('blogsingleFront') }}">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown"><a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ path('aboutusFront') }}">About Us </a></li>
+                                    <li><a href="dashboard-add-listing.html">Add Listing</a></li>
+                                    <li><a href="{{ path('LoginFront') }}">Login Page</a></li>
+                                    <li><a href="{{ path('SignupFront') }}">sign up</a></li>
+                                    <li><a href="page-pricing-tables.html">Pricing Tables</a></li>
+                                    <li><a href="{{ path('contactusFront') }}">Contact Us</a></li>
+                                    <li><a href="{{ path('erreurFront') }}">Pages 404</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{{ path('contactusFront') }}">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <hr class="margin-bottom-0px d-block d-sm-none">
+                        <a href="dashboard-add-listing.html" class="btn btn-sm border-radius-30 margin-tb-15px text-white background-second-color  box-shadow float-right padding-lr-20px margin-left-30px">
+                            <i class="fas fa-plus-circle"></i>  Add list
+                        </a>
+                        <a href="{{ path('LoginFront') }}" class="margin-tb-20px d-inline-block text-up-small float-left float-lg-right"><i class="far fa-user"></i>  Login</a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+
+            <!-- // Header  -->
+        {%endblock%}
+
+        {% block body %}
+
+        {% endblock %}
+
+        {% block footer %}
+            <footer class="padding-tb-100px background-main-color wow fadeInUp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <a class="d-inline-block margin-tb-15px"><img src="assets/img/logo-2.png" alt=""></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="text-white opacity-7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="footer-menu margin-tb-15px margin-lr-0px padding-0px list-unstyled float-lg-right">
+                                <li><a href="#" class="text-white">Featured</a></li>
+                                <li><a href="#" class="text-white">Feedback</a></li>
+                                <li><a href="#" class="text-white">Ask a Question</a></li>
+                                <li><a href="#" class="text-white">Team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="border-white opacity-4 margin-tb-45px">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="margin-0px text-white opacity-7 sm-mb-15px">© 2018 tabib Health Directory | All Right Reserved. </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="social-icon style-2 float-lg-right">
+                                <li class="list-inline-item"><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li class="list-inline-item"><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a class="google" href="#"><i class="fab fa-google-plus"></i></a></li>
+                                <li class="list-inline-item"><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a class="rss" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        {% endblock %}
+
+
+
+
+    </body>
+</html>

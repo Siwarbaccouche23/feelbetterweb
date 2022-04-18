@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}FeelBetter{% endblock %}</title>
+    {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+    {% block stylesheets %}
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800%7CPoppins:300i,300,400,700,400i,500%7CDancing+Script:700%7CDancing+Script:700" rel="stylesheet">
+        <!-- animate -->
+        <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}" />
+        <!-- owl Carousel assets -->
+        <link href="{{ asset('assets/css/owl.carousel.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/owl.theme.css') }}" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+        <!-- hover anmation -->
+        <link rel="stylesheet" href="{{ asset('assets/css/hover-min.css') }}">
+        <!-- flag icon -->
+        <link rel="stylesheet" href="{{ asset('assets/css/flag-icon.min.css') }}">
+        <!-- main style -->
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+        <!-- colors -->
+        <link rel="stylesheet" href="{{ asset('assets/css/colors/main.css') }}">
+        <!-- elegant icon -->
+        <link rel="stylesheet" href="{{ asset('assets/css/elegant_icon.css') }}">
+        <!-- admin style -->
+        <link rel="stylesheet" href="{{ asset('assets/css/sb-admin.css') }}">
+    {% endblock %}
+
+    {% block javascripts %}
+        <!-- jquery library  -->
+        <script  src="{{ asset('assets/js/jquery-3.2.1.min.js') }}"></script>
+        <!-- fontawesome  -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script  src="{{ asset('assets/js/sticky-sidebar.js') }}"></script>
+        <script  src="{{ asset('assets/js/YouTubePopUp.jquery.js') }}"></script>
+        <script  src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+        <script  src="{{ asset('assets/js/imagesloaded.min.js') }}"></script>
+        <script  src="{{ asset('assets/js/wow.min.js') }}"></script>
+        <script  src="{{ asset('assets/js/custom.js') }}"></script>
+        <script  src="{{ asset('assets/js/popper.min.js') }}"></script>
+        <script  src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    {% endblock %}
+</head>
+<body>
+{% block header %}
+    <header class="background-white box-shadow">
+    <div class="container header-in">
+
+
+        <div class="row">
+            <div class="col-lg-2 col-md-12">
+                <a id="logo" href="{{ path('app_front') }}" class="d-inline-block margin-tb-15px"><img src="assets/img/logo-1.png" alt=""></a>
+                <a class="mobile-toggle padding-13px background-main-color" href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="col-lg-7 col-md-12 position-inherit">
+                <ul id="menu-main" class="nav-menu float-lg-right link-padding-tb-20px">
+                    <li class="has-dropdown"><a href="#">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{ path('app_front') }}">Home 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="#">Listings</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{ path('MapFront') }}">Map - Grid Layout </a></li>
+                            <li><a href="{{ path('Map2Front') }}">Map - List Layout</a></li>
+                            <li><a href="{{ path('DoctorFront') }}">Doctor - Layout (1)</a></li>
+                            <li><a href="{{ path('Doctor2Front') }}">Doctor - Layout (2)</a></li>
+                            <li><a href="{{ path('singlelistingsFront') }}">Single Listings</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="#">Dashboard</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{ path('dashbord') }}">Dashboard Home </a></li>
+                            <li><a href="{{ path('dashbordmylistings') }}">My Listings</a></li>
+                            <li><a href="{{ path('dashbordmyfavorites') }}">My Favorites</a></li>
+                            <li><a href="{{ path('dashbordmyreviews') }}">Reviews</a></li>
+                            <li><a href="{{ path('dashbordmybookings') }}">Bookings</a></li>
+                            <li><a href="{{ path('dashbordaddlisting') }}">Add Listing</a></li>
+                            <li><a href="{{ path('dashbordpackage') }}">Packages</a></li>
+                            <li><a href="{{ path('dashbordprofil') }}">My Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{ path('bloggridFront') }}">Blog Grid </a></li>
+                            <li><a href="{{ path('bloglistFront') }}">Blog List</a></li>
+                            <li><a href="{{ path('blogclassicFront') }}">Blog Classic</a></li>
+                            <li><a href="{{ path('blogsingleFront') }}">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{ path('aboutusFront') }}">About Us </a></li>
+                            <li><a href="dashboard-add-listing.html">Add Listing</a></li>
+                            <li><a href="{{ path('LoginFront') }}">Login Page</a></li>
+                            <li><a href="{{ path('SignupFront') }}">sign up</a></li>
+                            <li><a href="page-pricing-tables.html">Pricing Tables</a></li>
+                            <li><a href="{{ path('contactusFront') }}">Contact Us</a></li>
+                            <li><a href="{{ path('erreurFront') }}">Pages 404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ path('contactusFront') }}">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <hr class="margin-bottom-0px d-block d-sm-none">
+                <a href="dashboard-add-listing.html" class="btn btn-sm border-radius-30 margin-tb-15px text-white background-second-color  box-shadow float-right padding-lr-20px margin-left-30px">
+                    <i class="fas fa-plus-circle"></i>  Add list
+                </a>
+                <a href="{{ path('LoginFront') }}" class="margin-tb-20px d-inline-block text-up-small float-left float-lg-right"><i class="far fa-user"></i>  Login</a>
+            </div>
+        </div>
+
+    </div>
+        </header>
+{%endblock%}
+
+{% block body %}
+
+{% endblock %}
+
+
+    {% block navbar %}
+        <nav class="navbar navbar-expand-lg navbar-dark z-index-9  fixed-top" id="mainNav">
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav navbar-sidenav background-main-color admin-nav" id="admin-nav">
+                    <li class="nav-item">
+                        <span class="nav-title-text">Main</span>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link active" href="{{ path('dashbord') }}">
+                            <i class="fas fa-fw fa-home"></i><span class="nav-link-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My items">
+                        <a class="nav-link" href="{{ path('dashbordmylistings') }}">
+                            <i class="fa fa-fw fa-table"></i>
+                            <span class="nav-link-text">My Listings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My Favorites">
+                        <a class="nav-link" href="dashboard-my-favorites.html">
+                            <i class="fa fa-fw fa-heart"></i>
+                            <span class="nav-link-text">My Favorites</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Reviews">
+                        <a class="nav-link" href="dashboard-reviews.html">
+                            <i class="fa fa-fw fa-star"></i>
+                            <span class="nav-link-text">Reviews</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-title-text">Example Pages</span>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Bookings">
+                        <a class="nav-link" href="dashboard-bookings.html">
+                            <i class="far fa-fw fa-bookmark"></i>
+                            <span class="nav-link-text">Bookings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Add Listing">
+                        <a class="nav-link" href="dashboard-add-listing.html">
+                            <i class="fa fa-fw fa-plus-circle"></i>
+                            <span class="nav-link-text">Add Listing</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Packages">
+                        <a class="nav-link" href="dashboard-packages.html">
+                            <i class="far fa-fw fa-list-alt"></i>
+                            <span class="nav-link-text">Packages</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span class="nav-title-text">User Area</span>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My Profile">
+                        <a class="nav-link" href="dashboard-my-profile.html">
+                            <i class="fa fa-fw fa-user-circle"></i>
+                            <span class="nav-link-text">My Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Sing Out">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-fw fa-sign-out-alt"></i>
+                            <span class="nav-link-text">Sing Out</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    {% endblock %}
+
+        {% block footer %}
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <span>© 2018 tabib Health Directory | All Right Reserved <a class="text-grey-2 margin-left-15px" href="https://themeforest.net/user/nile-theme/portfolio" target="_blank">Powered by : Nile Theme</a></span>
+                </div>
+            </div>
+        </footer>
+       {% endblock %}
+
+
+
+
+</body>
+</html>

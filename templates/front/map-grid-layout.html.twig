@@ -1,0 +1,274 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<body>
+<div class="row no-gutters">
+    <div class="col-lg-6">
+        <div class="map-distributors-in hight-full">
+            <div id="map-distributors">
+
+                <script>
+                    (function($) {
+                        "use strict";
+                        $("#map-distributors").goMap({
+                            zoom: 6,
+                            maptype: 'ROADMAP',
+                            markers: [
+
+                                {
+                                    address: '39.605247,-104.615413',
+                                    icon: 'assets/img/icon_marker_1.png',
+                                    html: '<div class="background-white width-250px"> <div class="item-thumbnail gradient"> <a href="#"><img src="http://placehold.it/450x245" alt=""></a> </div> <div class="padding-top-20px padding-lr-20px"> <div class="z-index-2 position-relative"> <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5> <div class="rating clearfix"> <span class="float-left text-grey-2"><i class="far fa-map"></i> California</span> <ul class="float-right"> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li></li> </ul> </div> </div> </div> </div> </div>'
+                                },
+
+
+
+                                {
+                                    address: '40.295850, -101.956722',
+                                    icon: 'assets/img/icon_marker_1.png',
+                                    html: '<div class="background-white width-250px"> <div class="item-thumbnail gradient"> <a href="#"><img src="http://placehold.it/450x245" alt=""></a> </div> <div class="padding-top-20px padding-lr-20px"> <div class="z-index-2 position-relative"> <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5> <div class="rating clearfix"> <span class="float-left text-grey-2"><i class="far fa-map"></i> California</span> <ul class="float-right"> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li></li> </ul> </div> </div> </div> </div> </div>'
+                                },
+
+
+                                {
+                                    address: '41.491692, -108.153011',
+                                    icon: 'assets/img/icon_marker_1.png',
+                                    html: '<div class="background-white width-250px"> <div class="item-thumbnail gradient"> <a href="#"><img src="http://placehold.it/450x245" alt=""></a> </div> <div class="padding-top-20px padding-lr-20px"> <div class="z-index-2 position-relative"> <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5> <div class="rating clearfix"> <span class="float-left text-grey-2"><i class="far fa-map"></i> California</span> <ul class="float-right"> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li></li> </ul> </div> </div> </div> </div> </div>'
+                                },
+
+
+
+                                {
+                                    address: '38.272239, -101.275570',
+                                    icon: 'assets/img/icon_marker_1.png',
+                                    html: '<div class="background-white width-250px"> <div class="item-thumbnail gradient"> <a href="#"><img src="http://placehold.it/450x245" alt=""></a> </div> <div class="padding-top-20px padding-lr-20px"> <div class="z-index-2 position-relative"> <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5> <div class="rating clearfix"> <span class="float-left text-grey-2"><i class="far fa-map"></i> California</span> <ul class="float-right"> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li></li> </ul> </div> </div> </div> </div> </div>'
+                                },
+
+
+                                {
+                                    address: '40.896473, -96.353695',
+                                    icon: 'assets/img/icon_marker_1.png',
+                                    html: '<div class="background-white width-250px"> <div class="item-thumbnail gradient"> <a href="#"><img src="http://placehold.it/450x245" alt=""></a> </div> <div class="padding-top-20px padding-lr-20px"> <div class="z-index-2 position-relative"> <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5> <div class="rating clearfix"> <span class="float-left text-grey-2"><i class="far fa-map"></i> California</span> <ul class="float-right"> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li></li> </ul> </div> </div> </div> </div> </div>'
+                                },
+
+
+                                {
+                                    address: '41.343395, -99.341976',
+                                    icon: 'assets/img/icon_marker_1.png',
+                                    html: '<div class="background-white width-250px"> <div class="item-thumbnail gradient"> <a href="#"><img src="http://placehold.it/450x245" alt=""></a> </div> <div class="padding-top-20px padding-lr-20px"> <div class="z-index-2 position-relative"> <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5> <div class="rating clearfix"> <span class="float-left text-grey-2"><i class="far fa-map"></i> California</span> <ul class="float-right"> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li></li> </ul> </div> </div> </div> </div> </div>'
+                                },
+
+
+                                {
+                                    address: '36.420822, -101.758968',
+                                    icon: 'assets/img/icon_marker_1.png',
+                                    html: '<div class="background-white width-250px"> <div class="item-thumbnail gradient"> <a href="#"><img src="http://placehold.it/450x245" alt=""></a> </div> <div class="padding-top-20px padding-lr-20px"> <div class="z-index-2 position-relative"> <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5> <div class="rating clearfix"> <span class="float-left text-grey-2"><i class="far fa-map"></i> California</span> <ul class="float-right"> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li></li> </ul> </div> </div> </div> </div> </div>'
+                                },
+
+
+                                {
+                                    address: '37.822350, -113.558284',
+                                    icon: 'assets/img/icon_marker_1.png',
+                                    html: '<div class="background-white width-250px"> <div class="item-thumbnail gradient"> <a href="#"><img src="http://placehold.it/450x245" alt=""></a> </div> <div class="padding-top-20px padding-lr-20px"> <div class="z-index-2 position-relative"> <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5> <div class="rating clearfix"> <span class="float-left text-grey-2"><i class="far fa-map"></i> California</span> <ul class="float-right"> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li class="active"></li> <li></li> </ul> </div> </div> </div> </div> </div>'
+                                },
+
+
+
+                            ],
+                            hideByClick: true
+                        });
+                        $("#default").click(function() {
+                            $("#dump").html($.dump($.goMap.getMarkers()));
+                        });
+                        $("#clearall").click(function() {
+                            $.goMap.clearMarkers();
+                        });
+                        $("#json").click(function() {
+                            $("#dump").html($.goMap.getMarkers("json"));
+                        });
+                        $("#data").click(function() {
+                            $("#dump").html($.goMap.getMarkers("data"));
+                        });
+
+                        $('.gm-style-iw').parent().css('width', 'auto');
+
+
+                    }(jQuery));
+
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="padding-45px">
+
+            <!-- Listing Search -->
+            <div class="listing-search">
+                <form class="row no-gutters">
+                    <div class="col-md-4 col-6">
+                        <div class="keywords">
+                            <input class="listing-form first" type="text" placeholder="Keywords..." value="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="categories dropdown">
+                            <a class="listing-form d-block" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item text-up-small" type="button">Doctors</button>
+                                <button class="dropdown-item text-up-small" type="button">Clinics</button>
+                                <button class="dropdown-item text-up-small" type="button">Pharmacies</button>
+                                <button class="dropdown-item text-up-small" type="button">Labs</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <a class="listing-bottom background-dark box-shadow" href="#">Search Now</a>
+                    </div>
+                </form>
+            </div>
+            <!-- // Listing Search -->
+
+            <hr>
+            <div class="float-left">14 Results Found</div>
+            <div class="float-right">
+                <a href="map-list-layout.html" class="d-inline-block margin-right-15px"><i class="fas fa-list-ul"></i></a>
+                <a href="map-grid-layout.html" class="text-main-color"><i class="fas fa-th-large"></i></a>
+            </div>
+            <div class="clearfix"></div>
+            <hr>
+
+            <div class="row">
+                <!-- clinic -->
+                <div class="col-md-6 margin-bottom-45px">
+                    <div class="background-white thum-hover box-shadow hvr-float">
+                        <div class="item-thumbnail background-white">
+                            <a href="#"><img src="http://placehold.it/450x245" alt=""></a>
+                        </div>
+                        <div class="padding-30px">
+                            <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5>
+                            <div class="rating clearfix">
+                                <span class="float-left text-grey-2"><i class="far fa-map"></i>  California</span>
+                                <ul class="float-right">
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="padding-lr-30px padding-tb-15px background-light-grey">
+                            <div class="row no-gutters">
+                                <div class="col-6"><a href="#" class="text-lime"><i class="far fa-bookmark"></i> Open Now!</a></div>
+                                <div class="col-6 text-right"><a href="#" class="text-red"><i class="far fa-heart"></i> Save</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // clinic -->
+
+                <!-- clinic -->
+                <div class="col-md-6 margin-bottom-45px">
+                    <div class="background-white thum-hover box-shadow hvr-float">
+                        <div class="item-thumbnail background-white">
+                            <a href="#"><img src="http://placehold.it/450x245" alt=""></a>
+                        </div>
+                        <div class="padding-30px">
+                            <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5>
+                            <div class="rating clearfix">
+                                <span class="float-left text-grey-2"><i class="far fa-map"></i>  California</span>
+                                <ul class="float-right">
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="padding-lr-30px padding-tb-15px background-light-grey">
+                            <div class="row no-gutters">
+                                <div class="col-6"><a href="#" class="text-lime"><i class="far fa-bookmark"></i> Open Now!</a></div>
+                                <div class="col-6 text-right"><a href="#" class="text-red"><i class="far fa-heart"></i> Save</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // clinic -->
+
+
+                <!-- clinic -->
+                <div class="col-md-6 margin-bottom-45px">
+                    <div class="background-white thum-hover box-shadow hvr-float">
+                        <div class="item-thumbnail background-white">
+                            <a href="#"><img src="http://placehold.it/450x245" alt=""></a>
+                        </div>
+                        <div class="padding-30px">
+                            <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5>
+                            <div class="rating clearfix">
+                                <span class="float-left text-grey-2"><i class="far fa-map"></i>  California</span>
+                                <ul class="float-right">
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="padding-lr-30px padding-tb-15px background-light-grey">
+                            <div class="row no-gutters">
+                                <div class="col-6"><a href="#" class="text-lime"><i class="far fa-bookmark"></i> Open Now!</a></div>
+                                <div class="col-6 text-right"><a href="#" class="text-red"><i class="far fa-heart"></i> Save</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // clinic -->
+
+
+                <!-- clinic -->
+                <div class="col-md-6 margin-bottom-45px">
+                    <div class="background-white thum-hover box-shadow hvr-float">
+                        <div class="item-thumbnail background-white">
+                            <a href="#"><img src="http://placehold.it/450x245" alt=""></a>
+                        </div>
+                        <div class="padding-30px">
+                            <h5 class="margin-bottom-20px"><a class="text-dark" href="#">Alrayan Eye Clinic</a></h5>
+                            <div class="rating clearfix">
+                                <span class="float-left text-grey-2"><i class="far fa-map"></i>  California</span>
+                                <ul class="float-right">
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li class="active"></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="padding-lr-30px padding-tb-15px background-light-grey">
+                            <div class="row no-gutters">
+                                <div class="col-6"><a href="#" class="text-lime"><i class="far fa-bookmark"></i> Open Now!</a></div>
+                                <div class="col-6 text-right"><a href="#" class="text-red"><i class="far fa-heart"></i> Save</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // clinic -->
+
+            </div>
+            <!-- // row -->
+
+            <ul class="pagination pagination-md ">
+                <li class="page-item disabled"><a class="page-link rounded-0" href="#" tabindex="-1">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link rounded-0" href="#">Next</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}

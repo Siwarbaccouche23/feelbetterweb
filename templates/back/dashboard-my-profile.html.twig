@@ -1,0 +1,88 @@
+{% extends 'baseback.html.twig' %}
+
+{% block body %}
+<body>
+<div class="content-wrapper">
+    <div class="container-fluid overflow-hidden">
+        <div class="row margin-tb-90px margin-lr-10px sm-mrl-0px">
+            <!-- Page Title -->
+            <div id="page-title" class="padding-30px background-white full-width">
+                <div class="container">
+                    <ol class="breadcrumb opacity-5">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li class="active">My Profile</li>
+                    </ol>
+                    <h1 class="font-weight-300">My Profile</h1>
+                </div>
+            </div>
+            <!-- // Page Title -->
+
+            <div class="row margin-tb-45px full-width">
+                <div class="col-md-4">
+                    <div class="padding-15px background-white">
+                        <a href="#" class="d-block margin-bottom-10px"><img src="http://placehold.it/500x500" alt=""></a>
+                        <a href="#" class="btn btn-sm  text-white background-main-color btn-block">Upload Image</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="far fa-user margin-right-10px"></i> User Name</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="Salim Aldosery">
+                        </div>
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="fas fa-lock margin-right-10px"></i> Password</label>
+                            <input type="password" class="form-control form-control-sm">
+                        </div>
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="far fa-envelope-open margin-right-10px"></i> Email</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="info@yourname.com">
+                        </div>
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="fas fa-mobile-alt margin-right-10px"></i> Phone</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="002229456987">
+                        </div>
+                        <div class="col-md-6">
+                            <label><i class="fas fa-link margin-right-10px"></i> Website</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="www.your-site.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label><i class="fas fa-info margin-right-10px"></i> Description</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="description">
+                        </div>
+                    </div>
+                    <hr class="margin-tb-40px">
+                    <div class="row">
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="fab fa-facebook margin-right-10px"></i> Facebook</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="http://www.facebook.com">
+                        </div>
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="fab fa-twitter margin-right-10px"></i> Twitter</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="http://www.twitter.com">
+                        </div>
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="fab fa-youtube margin-right-10px"></i> Youtube</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="http://www.youtube.com">
+                        </div>
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="fab fa-google-plus-g margin-right-10px"></i> Google Pluse</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="http://www.google-plus.com">
+                        </div>
+                        <div class="col-md-6 margin-bottom-20px">
+                            <label><i class="fab fa-whatsapp margin-right-10px"></i> Whatsapp</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="http://www.whatsapp.com">
+                        </div>
+
+                    </div>
+                    <a href="#" class="btn btn-md padding-lr-25px  text-white background-main-color btn-inline-block">Update Profile</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <body>
+    <div id="page-title" class="padding-tb-30px gradient-white">
+        <div class="container text-center">
+            <ol class="breadcrumb opacity-5">
+                <li><a href="#">Home</a></li>
+                <li class="active">Sing Up</li>
+            </ol>
+            <h1 class="font-weight-300">Sing Up Page</h1>
+        </div>
+    </div>
+
+    <div class="container margin-bottom-100px">
+        <!--======= log_in_page =======-->
+        <div id="log-in" class="site-form log-in-form box-shadow border-radius-10">
+
+            <div class="form-output">
+
+                <form>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Your Email</label>
+                        <input class="form-control" placeholder="" type="email">
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Your Password</label>
+                        <input class="form-control" placeholder="" type="password">
+                    </div>
+
+                    <div class="form-group label-floating">
+                        <label class="control-label">Confirm Your Password</label>
+                        <input class="form-control" placeholder="" type="password">
+                    </div>
+
+                    <div class="form-group label-floating is-select">
+                        <label class="control-label">Your Gender</label>
+                        <select class="selectpicker form-control">
+                            <option value="MA">Male</option>
+                            <option value="FE">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="remember">
+                        <div class="checkbox">
+                            <label>
+                                <input name="optionsCheckboxes" type="checkbox">
+                                I accept the <a href="#">Terms and Conditions</a> of the website
+                            </label>
+                        </div>
+                    </div>
+
+                    <a href="01-home.html" class="btn btn-md btn-primary full-width">Complete sign up !</a>
+
+                    <div class="or"></div>
+
+                    <a href="#" class="btn btn-md bg-facebook full-width btn-icon-left"><i class="fab fa-facebook margin-right-8px" aria-hidden="true"></i> Login with Facebook</a>
+
+                    <a href="#" class="btn btn-md bg-twitter full-width btn-icon-left"><i class="fab fa-twitter margin-right-8px" aria-hidden="true"></i> Login with Twitter</a>
+
+
+                    <p>you have an account? <a href="page-login.html"> Sing in !</a> </p>
+                </form>
+
+            </div>
+        </div>
+        <!--======= // log_in_page =======-->
+
+    </div>
+    </body>
+{% endblock %}
